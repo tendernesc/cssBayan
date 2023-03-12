@@ -1,0 +1,82 @@
+.bayan-css {
+    margin: 40px 200px;
+}
+.bayan-css .acor-body {
+    width: max-content;   
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    padding: 0 30px;
+    transition: color 0.4s, padding 0.7s;
+    overflow: hidden;
+    font-size: 16px;
+}
+.bayan-css .acor-body p {
+    margin: 0 0 10px;
+}
+.bayan-css label {
+    cursor: pointer;
+    background-color: #555f68;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #BFE2FF;
+    font-weight: 300;
+    z-index: 100;   
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+.bayan-css label:hover {
+    color: #bb6969;
+}
+.bayan-css input{
+    display: none;
+}
+.bayan-css label:before {
+    content: '\27A4';
+    float: right;
+}
+.bayan-css input:checked + label {
+    background-color: rgba(171, 236, 97, 0.4);
+    color: #FFF;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
+}
+.bayan-css input:hover + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+.bayan-css input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}
+.imag {
+    height:0;
+    width:0;
+    transition: 0.4s linear;
+    }
+
+.styleText {
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif; 
+    background-color: rgba(78, 205, 228, 0.4);
+}
+
+
+.mems:hover > .acor-body {
+ height: auto;
+ margin-top: -5px;
+ padding: 20px 30px 10px;
+ transition: padding 1.5s;
+}
+
+ input:checked + label + .acor-body> p > .imag{
+    height:200px;
+    width:200px;
+}
+.mems:hover > .acor-body> p > .imag{
+    height:200px;
+    width:200px;
+}
